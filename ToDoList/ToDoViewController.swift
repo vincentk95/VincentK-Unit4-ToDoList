@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// This class handles the details of an instance of a To Do object
 class ToDoViewController: UITableViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
@@ -22,7 +23,18 @@ class ToDoViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dueDatePickerView.date = Date().addingTimeInterval(24*60*60)
+        
+        // if an item is being edited
+        if let todo = todo {
+            navigationItem.title = "To-Do"
+            titleTextField.text = todo.title
+            isCompleteButton.isSelected = todo.isComplete
+            dueDatePickerView.date = todo.dueDate
+            notesTextView.text = todo.notes
+        } else { // if there is a new item, set date picker to 24h in future
+            dueDatePickerView.date = Date().addingTimeInterval(24*60*60)
+        }
+        
         updateDueDateLabel(date: dueDatePickerView.date)
         updateSaveButtonState()
     }
@@ -39,7 +51,6 @@ class ToDoViewController: UITableViewController {
             largeCellHeight
             
         case [2,0]: // notes cell
-            print("Joehoe notes cell!!!")
             return largeCellHeight
             
         default: return normalCellHeight
@@ -62,6 +73,7 @@ class ToDoViewController: UITableViewController {
         }
     }
     
+    /// Prepares for unwind segue when user saves an entry
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         

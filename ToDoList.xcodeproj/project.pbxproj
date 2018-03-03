@@ -18,6 +18,7 @@
 		BF29F05E2049DE4E00C35A0C /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29F05D2049DE4E00C35A0C /* ToDoListUITests.swift */; };
 		BF29F06C2049DEFD00C35A0C /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29F06B2049DEFD00C35A0C /* ToDo.swift */; };
 		BF29F06E2049DF6000C35A0C /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29F06D2049DF6000C35A0C /* ToDoTableViewController.swift */; };
+		BFB5768E204AA77D003058C2 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5768D204AA77D003058C2 /* ToDoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BF29F05F2049DE4E00C35A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF29F06B2049DEFD00C35A0C /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		BF29F06D2049DF6000C35A0C /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		BFB5768D204AA77D003058C2 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				BF29F06B2049DEFD00C35A0C /* ToDo.swift */,
+				BFB5768D204AA77D003058C2 /* ToDoCell.swift */,
 				BF29F06D2049DF6000C35A0C /* ToDoTableViewController.swift */,
 				BF29F03D2049DE4E00C35A0C /* AppDelegate.swift */,
 				BF29F0412049DE4E00C35A0C /* Main.storyboard */,
@@ -277,6 +280,7 @@
 				BF29F03E2049DE4E00C35A0C /* AppDelegate.swift in Sources */,
 				BF29F06E2049DF6000C35A0C /* ToDoTableViewController.swift in Sources */,
 				BF29F06C2049DEFD00C35A0C /* ToDo.swift in Sources */,
+				BFB5768E204AA77D003058C2 /* ToDoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
